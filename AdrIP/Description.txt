@@ -1,0 +1,12 @@
+Le principe de ce programme est de découper une Adresse
+IP donnée avec un masque numérique compact (xxx.xxx.xxx.xxx/xx)
+en blocs de caractères afin de récupérer les diverses informations
+qui peuvent en découler (Adresse IP, masque binaire, Adresse de réseau,
+adresse de diffusion, et le nombre de machines possible sur le réseau)
+
+Il est divisé en 5 "classes": -AdrIP, la "classe" principale, qui appelle les autres
+-adresses, qui gère la récupération de l'adresse IP en numérique et binaire, et
+détermine les adresses de réseau et de diffusion
+-masque, qui détermine le masque binaire et numérique étendu
+-machines, qui détermine le nombre de machines possibles sur le réseau
+-verif, qui vérifie la validité de l'adresse donnée.
